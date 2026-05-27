@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogPulse - Advanced Search</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#131313",
+              "surface-container-high": "#2a2a2a",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-container-low": "#1c1b1b",
+              "surface-container": "#201f1f",
+              "surface-container-highest": "#353534",
+              "on-surface": "#e5e2e1",
+              "on-surface-variant": "#c7c4d7",
+              "outline": "#908fa0",
+              "outline-variant": "#464554",
+              "primary": "#c0c1ff",
+              "secondary": "#ffffff",
+              "error": "#ffb4ab",
+              "tertiary": "#ffb783",
+              "surface-bright": "#3a3939"
+            },
+            fontFamily: {
+              "body-sm": ["Geist"],
+              "code-sm": ["JetBrains Mono"],
+              "display": ["Geist"]
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-on-surface antialiased overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
